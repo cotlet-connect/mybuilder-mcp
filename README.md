@@ -113,6 +113,64 @@ python3 mybuilder_agent.py tools     # list Cotlet.dev tools
 python3 mybuilder_agent.py serve     # start the stdio MCP server (same as no argument)
 ```
 
+## What you can ask your AI to do in MyBuilder
+
+These are real jobs MyBuilder users asked about. Cotlet lets ChatGPT, Claude or any MCP client do them in your own signed-in MyBuilder account.
+
+### Leads and shortlists
+
+#### Can ChatGPT or Claude answer new leads in MyBuilder for me?
+
+Yes. With Cotlet, ChatGPT or Claude reads the new leads on your signed-in MyBuilder Leads page, keeps the ones that match your trade and area and drafts an introduction for each. Nothing is sent until you say yes.
+
+Ask your agent: "List today's MyBuilder leads that match my trade and draft an introduction for each. Send nothing yet."
+
+As an API endpoint: Yes. Save the lead check as an endpoint in Cotlet and call it every hour from n8n, Make or Zapier to get matching leads by SMS or Slack.
+
+#### Can ChatGPT or Claude follow up shortlists in MyBuilder for me?
+
+Yes. With Cotlet, your agent reads your Shortlisted page in MyBuilder, finds homeowners who shortlisted you and have not replied and drafts a message to each. Nothing is sent until you say yes.
+
+Ask your agent: "Which homeowners shortlisted me in MyBuilder this week and have not replied? Draft a message to each."
+
+As an API endpoint: Yes. Save the shortlist check as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier to get the quiet homeowners by email.
+
+#### Can ChatGPT or Claude fill a gap in my diary using MyBuilder leads?
+
+Yes. With Cotlet, your agent reads the leads near you in your signed-in MyBuilder account and lists the ones you could start in the next 7 days, with the area and shortlist fee. Nothing is sent until you say yes.
+
+Ask your agent: "I had a cancellation next week. Show me MyBuilder leads near me that I could start in the next 7 days."
+
+As an API endpoint: Yes. Save the lead search as an endpoint in Cotlet and call it from n8n, Make or a script whenever a job cancels in your calendar.
+
+### Fees and costs
+
+#### Can ChatGPT or Claude add up my MyBuilder shortlist fees against the jobs I won?
+
+Yes. MyBuilder says you only pay a fee when both you and the homeowner are interested, and it has no export of your fees. With Cotlet, your agent reads your shortlists and billing in your account and adds up the fees and the jobs you won this month.
+
+Ask your agent: "Add up my MyBuilder shortlist fees this month and how many jobs I won from them."
+
+As an API endpoint: Yes. Save the fee total as an endpoint in Cotlet and call it on the first of each month from n8n, Make or Zapier to fill a Google Sheet.
+
+### Reviews
+
+#### Can ChatGPT or Claude ask my customers for reviews in MyBuilder?
+
+Yes. With Cotlet, your agent lists the jobs you finished this month in your MyBuilder account that have no review yet and drafts a review request for each customer. Nothing is sent until you say yes.
+
+Ask your agent: "List MyBuilder jobs I finished this month with no review yet and draft a review request for each customer."
+
+As an API endpoint: Yes. Save the unreviewed job list as an endpoint in Cotlet and call it monthly from n8n, Make or Zapier to get the list by email.
+
+#### Can ChatGPT or Claude reply to my reviews in MyBuilder?
+
+Yes. MyBuilder's support centre suggests thanking the customer after a positive review. With Cotlet, your agent reads the new reviews on your Profile and drafts a reply to each for you to approve. Nothing changes until you say yes.
+
+Ask your agent: "Show my new MyBuilder reviews and draft a reply to each for me to approve."
+
+As an API endpoint: Yes. Save the new-review read as an endpoint in Cotlet and call it every week from n8n, Make or Zapier to get the reviews and draft replies by email.
+
 ## Questions from MyBuilder users
 
 **Does MyBuilder have an API?**
